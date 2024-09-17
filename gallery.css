@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+.top nav ul a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+.top nav ul a:hover{
+    color: red;
+}
+.top img{
+    height: 40px;
+}
+header{
+    background-image:linear-gradient(rgba(52, 53, 71, 0.678), rgba(53, 51, 70, 0.678)), url(Weddingimages/Services/pic25-free-img.jpeg);
+    background-size: cover;
+    height: 540px;
+    background-attachment: fixed;
+    width: 100%;
+}
+.story{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 80px;
+}
+#wedding{
+    font-weight: bolder;
+    font-size: 6.5rem;
+    letter-spacing: 2.5px;
+}
+#gallery{
+    color: red;
+}
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 90px;
+    margin-top: 30px;
+    background-color: rgba(128, 128, 128, 0.082);
+    padding-bottom: 90px;
+}
+.pics img{
+    width: 30%;
+    padding: 10px;
+}
+
+
+.dropdown{
+    position: relative;
+    display: none;
+}
+.dropbutton{
+    cursor: pointer;
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    top: 65px;
+    left: 0;
+    width: 100%;
+}
+.dropcontent li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.438);
+    list-style-type: none;
+}
+.dropbutton:focus + .dropcontent, .dropcontent:hover{
+    display: block
+}
+.dropcontent li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    padding-left: 6px;
+}
+.dropcontent li a:hover{
+    color: red;
+}
+.dropdown button{
+    line-height: 0;
+    border: 0;
+    border: 1px solid rgb(253, 59, 91);
+    border-radius: 4px;
+}
+#ayesha, #monica{
+    display: flex;
+    
+}
+#voluptass, #voluptas{
+    background-color: rgba(128, 128, 128, 0.082);
+    height: 245px;
+    width: 50%;
+}
+video{
+    width: 50%;
+}
+#vid{
+    margin-top: 30px;
+}
+
+
+@media(max-width:920px) {
+    .top ul{
+        display: none;
+    }
+    .dropdown{
+        display: contents;
+    }
+    .top{
+        padding: 15px;
+    }
+}
+@media(max-width:720px){
+    .top img{
+        width: 140px;
+    }
+    .dropdown img{
+        width: 30px;
+        height: 30px;
+    }
+}
